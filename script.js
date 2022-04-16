@@ -31,8 +31,13 @@ function uploadFile(event) {
 
     const files = document.getElementById('file').files;
 
-    if (files.length > MAX_FILES) {
+    if (files.length === 0) {
         $('#fileWarning').show();
+        $('#fileWarning').text('Pilih filenya dulu sayanggg');
+        return false;
+    } else if (files.length > MAX_FILES) {
+        $('#fileWarning').show();
+        $('#fileWarning').text('Gaboleh lebih dari 3 woyyy');
         return false;
     } else {
         $('#fileWarning').hide();
