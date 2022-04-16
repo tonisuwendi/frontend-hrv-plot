@@ -1,0 +1,76 @@
+.loading {
+    display: none;
+}
+
+.loading .backdrop {
+    background: rgba(255, 255, 255, 0.7);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.loading img {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: 10;
+}
+
+.real-data-container {
+    display: none;
+}
+
+.peak-wrapper {
+    margin: auto;
+}
+
+.img-responsive {
+    width: 600px;
+}
+
+svg {
+    width: 600px;
+}
+
+#data1,
+#data2,
+#data3,
+#data4 {
+    text-align: center;
+}
+
+#multiPeak {
+    display: none;
+}
+
+.img2,
+.img3 {
+    width: 500px;
+}
+
+.peak-data-flex {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.mpld3-figure {
+    width: 500px;
+}
+
+@media screen and (max-width: 750px) {
+    .img-responsive {
+        width: 100% !important;
+    }
+
+    svg {
+        width: 100% !important;
+    }
+
+    .peak-data-flex {
+        display: block;
+    }
+}
